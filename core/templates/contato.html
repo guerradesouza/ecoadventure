@@ -1,0 +1,107 @@
+{% load static %}
+    <section id="contact" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Inscrever-me</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="contact-block">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo" required data-error="Digite seu nome completo">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" class="form-control" id="rg" name="rg" placeholder="RG" required data-error="Digite seu RG">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" required data-error="Digite seu CPF">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" class="form-control" id="dataDeNascimento" name="dataDeNascimento" placeholder="Data de Nascimento" required data-error="Informe sua data de nascimento">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" class="form-control" id="localOndeTrabalha" name="localOndeTrabalha" placeholder="Local onde trabalha" required data-error="Informe o local onde trabalha">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" class="form-control" id="profissao" name="profissao" placeholder="Profissão" required data-error="Informe sua profissão">
+                      <div class="help-block with-errors"></div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+
+                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" placeholder="Número de Telefone" id="telefone" class="form-control" name="telefone" required data-error="Informe seu número de telefone">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" placeholder="Whatsapp" id="whatsapp" class="form-control" name="whatsapp" required data-error="Informe seu whatsapp">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" placeholder="Facebook" id="facebook" class="form-control" name="facebook" required data-error="Informe link do seu Facebook">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" placeholder="Instagram" id="instagram" class="form-control" name="instagram" required data-error="Informe seu Instagram">
+                      <div class="help-block with-errors"></div>
+
+                      <input type="text" placeholder="Cidade do curso" id="cidadeDoCurso" class="form-control" name="cidadeDoCurso" required data-error="Informe a cidade do curso">
+                      <div class="help-block with-errors"></div>
+
+
+                    </div>
+                  </div>
+                   <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço completo: rua, nº da casa, bairro, cidade, estado e CEP" required data-error="Digite seu endereço completo" >
+                      <div class="help-block with-errors"></div>
+
+
+
+                      <!--aqui o checkbox-->
+                      <fieldset class="form-control">
+                        <legend>Escolha o curso:</legend>
+
+                        <div>
+                          <input type="checkbox" id="cursoAph" name="cursoAph" />
+                          <label for="cursoAph">APH - Atendimento pré hospitalar</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox" id="cursoSbv" name="cursoSbv" />
+                          <label for="cursoSbv">SBV - Suporte básico de vida</label>
+                        </div>
+                    </fieldset>
+                    <!-- termina o checkbox -->
+                    </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="obs" placeholder="Deixe uma observação" rows="7" data-error="Deixe uma observação" ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button text-left">
+                      <button class="btn btn-common" id="form-submit" type="submit">Enviar Inscrição</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="map">
+              <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14340.157047388732!2d-53.81984757335979!3d-29.679454590232822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979ca07430001%3A0x909d4d1e0d4d4ef!2sSanta+Maria%2C+RS!5e0!3m2!1sen!2sbr!4v1691357159036"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
