@@ -63,3 +63,30 @@ class Funcionario(Base):
     def __str__(self):
         return self.nome
 
+CURSOS_CHOICES = (
+    ('aph', 'Curso APH'),
+    ('sbv', 'Curso SBV'),
+) 
+class InscricaoForm(models.Model):
+    nomeCompleto = models.CharField( max_length=100)
+    rg = models.CharField( max_length=100)
+    cpf = models.CharField(max_length=100)
+    dataDeNascimento = models.DateField( blank=False, null=False)
+    localOndeTrabalha = models.CharField( max_length=100)
+    profissao = models.CharField( max_length=100)
+    email = models.EmailField( blank=False, null=False)
+    telefone = models.CharField( max_length=20)
+    whatsapp = models.CharField( max_length=20)
+    facebook = models.CharField( max_length=100)
+    instagram = models.CharField( max_length=100)
+    cidadeDoCurso = models.CharField( max_length=100)
+    endereco = models.CharField( max_length=200)
+    curso_escolhido = models.CharField(max_length=3, choices=CURSOS_CHOICES)
+    obs = models.TextField()
+
+    def __str__(self):
+        return self.nomeCompleto
+    
+
+
+

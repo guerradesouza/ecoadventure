@@ -1,5 +1,5 @@
 {% load static %}
-    <section id="contact" class="section-padding bg-gray">
+<section id="contact" class="section-padding bg-gray">
       <div class="container">
         <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Inscrever-me</h2>
@@ -8,7 +8,13 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form action="." method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Salvar">
+              </form>
+              <form id="contato" method="post" action="{% url 'index' %}">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -84,7 +90,7 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" id="obs" placeholder="Deixe uma observação" rows="7" data-error="Deixe uma observação" ></textarea>
+                      <textarea class="form-control" id="obs" name="obs" placeholder="Deixe uma observação" rows="7" data-error="Deixe uma observação" ></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button text-left">
